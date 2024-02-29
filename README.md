@@ -1,50 +1,52 @@
-# Proyecto CRUD de Usuarios con JDBC y MySQL 🛠️📊
+# Proyecto CRUD de Usuarios con Servlets, JSP y JDBC 🛠️📊
 
 ## Acerca del Proyecto
 
-Este repositorio es un CRUD (Crear, Leer, Actualizar, Eliminar) de usuarios implementado en Java usando JDBC y MySQL.
+Este repositorio alberga un sistema CRUD (Crear, Leer, Actualizar, Eliminar) de usuarios implementado en Java mediante el uso de Servlets y JSP para la creación de la interfaz web y JDBC para la interacción con la base de datos MySQL.
 
-### Tecnología Principal: JDBC
+### Tecnologías Principales: Servlets, JSP y JDBC
 
-En este proyecto, hemos empleado JDBC (Java Database Connectivity) como la tecnología principal para la conexión con la base de datos MySQL.
+En este proyecto, Servlets se encarga de manejar las solicitudes HTTP, JSP proporciona la interfaz de usuario dinámica, y JDBC facilita la conexión y operaciones con la base de datos MySQL.
 
-### Ventajas de JDBC
+### Ventajas de Servlets, JSP y JDBC
 
-- **Portabilidad:** Debido a su naturaleza estándar y su estrecha integración con Java, las aplicaciones JDBC son altamente portátiles y pueden ejecutarse en diferentes plataformas sin cambios significativos.
-- **Rendimiento:** JDBC proporciona un rendimiento eficiente al interactuar directamente con la base de datos, permitiendo una ejecución rápida de consultas y operaciones.
+- **Interactividad en la Interfaz Web:** Servlets y JSP permiten la creación de interfaces web dinámicas, mejorando la experiencia del usuario.
+- **Reutilización de Componentes:** La combinación de Servlets y JSP ofrece la capacidad de reutilizar componentes, facilitando un desarrollo más eficiente y modular.
+- **Conexión Eficiente con la Base de Datos:** JDBC proporciona una conexión eficiente con la base de datos MySQL, permitiendo la ejecución de consultas y operaciones CRUD.
 
-### Desventajas de JDBC
+### Contenido del Repositorio
 
-- **Complejidad de Código:** En comparación con algunas soluciones más modernas, el código JDBC puede volverse largo y complicado. Esto puede dificultar la lectura y el mantenimiento, especialmente para desarrolladores menos experimentados.
-- **Mantenimiento Manual:** A diferencia de algunas herramientas automatizadas, JDBC requiere un manejo más manual de las conexiones y transacciones, lo que puede aumentar la carga de trabajo y la posibilidad de errores.
+En este documento encontrarás los componentes esenciales del proyecto:
 
-## Contenido del Repositorio
-
-En este documento encontrarás todo lo necesario para ejecutar el programa, incluyendo:
-
-- `Main.java`: Archivo principal que contiene la clase principal (`Main`).
-- `DatabaseConnector.java`: Clase que gestiona la conexión y desconexión con la base de datos.
+- `UsuarioServlet.java`: Un servlet que maneja las solicitudes HTTP para las operaciones CRUD, utilizando JDBC para interactuar con MySQL.
+- `formulario.jsp`: Página JSP que presenta un formulario interactivo para realizar operaciones CRUD en la base de datos.
 - `UsuarioManager.java`: Clase que contiene la lógica para realizar operaciones CRUD en la base de datos.
+
+### Configuración del Proyecto
+
+1. Clona este repositorio en tu entorno de desarrollo.
+2. Configura tu servidor MySQL y ajusta las credenciales de conexión en `UsuarioServlet.java`.
 
 ### IDE y Herramientas Utilizadas
 
-El proyecto fue desarrollado utilizando IntelliJ IDEA. Las herramientas incluyen:
+El proyecto fue desarrollado utilizando [IntelliJ IDEA]. Las herramientas incluyen:
 
-- Java version "15.0.2" 
+- Java version "[15.0.2]"
 - MySQL Database
-- XAMPP (para el servidor MySQL)
-- IntelliJ IDEA
+- [XAMPP] (para el servidor MySQL)
+- [IntelliJ IDEA]
 
 ## Estado del Proyecto
 
 - ✅ Finalizado.
-- 🔄 Última actualización: 04/02/2024.
+- 🔄 Última actualización: [18/02/2024].
 - 🚫 No se han detectado errores.
-- 🌐 Se conecta a la base de datos alojada en localhost:3306/mi_db.
+- 🌐 Conexión establecida con la base de datos alojada en [localhost:3306/mi_db].
 
 ## Próximas Características
 
 En futuras versiones, se planea:
 
-- 🌐 Implementar una interfaz web utilizando servlets y HTML.
-- 🔄 Mejorar la experiencia del usuario con una interfaz más amigable.
+- 🌐 Mejorar la interfaz de usuario con estilos y diseño atractivos.
+- 🔄 Implementar funcionalidades adicionales
+
